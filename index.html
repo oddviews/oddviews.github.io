@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <link rel="shortcut icon" href="src/assets/normal.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/normal.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="og:site_name" content="NIJISANJI EN Sorting">
+  <meta name="og:description" content="A simple website for sorting NIJISANJI EN livers in a formatted list.">
+  <meta name="og:image" content="https://i.imgur.com/IZzJMk6.jpg">
+  <title>NIJIEN liver sorting</title>
+
+  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
+  <script src="src/js/data.js"></script>
+  <script src="src/js/data/2023-01-10.js"></script>
+
+  <script src="src/js/html2canvas.min.js"></script>
+  <script src="src/js/lz-string.min.js"></script>
+  <script src="src/js/seedrandom.min.js"></script>
+  <script src="src/js/main.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="progress">
+        <span class="progressbattle"></span>
+        <div class="progressbar">
+            <div class="progressfill"><span class="progresstext"></span></div>
+        </div>
+    </div>
+
+    <div class="sorter">
+        <img src="src/assets/defaultL.png" class="left sort image">
+
+        <div class="starting start button">nijien sorter<br><br>click to start!</div>
+        <div class="starting load button">load <span></span></div>
+
+        <div class="loading button"><div></div><span>loading...</span></div>
+
+        <div class="sorting tie button">can't decide</div>
+        <div class="sorting undo button">go back!</div>
+        <div class="sorting save button">save for later?</div>
+
+        <div class="finished save button">generate result URL</div>
+        <div class="finished getimg button">generate image</div>
+        <div class="finished list button">generate text list</div>
+
+        <img src="src/assets/defaultR.png" class="right sort image">
+
+        <div class="left sort text"><p></p></div>
+        <div class="right sort text"><p></p></div>
+    </div>
+
+    <div class="options"></div>
+    <div class="image selector">display images on result: </div>
+    <div class="time taken"></div>
+    <div class="results"></div>
+
+    <div class="info">
+        <a href="https://relick.me/song/">Song Sorter</a> | <a href="mailto:fera@imouto.my">Contact</a> | <a href="https://github.com/execfera/charasort/">Source Code</a> | <a class="clearsave">Clear Save Data</a>
+        
+        <br><br>
+
+        <p>sorter for NIJIEN livers. Pick your sources, and hit the start button.</p>
+        <p>slick on the liver you like better from the two, or tie them if you like them equally or don't know them.</p>
+
+        <br><br>
+
+        <p>keyboard controls during sorting: H/LeftArrow (pick left) J/DownArrow (undo) K/UpArrow (tie) L/RightArrow (pick right) S (save progress).</p>
+        <p>before sorting: S/Enter (start sorting) L (load progress).
+        <p>1/2/3 always correspond to the first/second/third buttons.</p>
+        
+        <br><br>
+
+        <p>inspired by <a href="http://mainyan.sakura.ne.jp/thsort.html">this site</a>. sorter images taken from <a href="https://nijisanji-store.com/pages/liver-nijisanji-en">here.</a> splash images and favicon by <a href="https://twitter.com/oddviews_">ori.</a></p>
+
+        <br><br>
+
+        <p>jan 10th, 2023 - updated with every member of the EN branch.</p>
+        
+    </div>
+</div>
+</body>
+
+</html>
